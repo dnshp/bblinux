@@ -33,3 +33,14 @@
 		opp-supported-hw = <0x06 0x0100>;
 	};
 };
+
+&i2c2 {
+	magn@1e {
+		compatible = "st,lsm9ds1-magn";
+		reg = <0x1e>;
+	};
+	imu@6b {
+		compatible = "st,lsm9ds1-imu";
+		reg = <0x6b>;
+	};
+};
